@@ -6,13 +6,6 @@
 
 #define INCREMENT_SIZE 10
 
-struct DynamicArray {
-    int size;
-    int maxSize;
-    int incrementSize;
-    void** array; // Array of void* pointers
-};
-
 DynamicArray* create_dynamic_array(int initialSize) {
     DynamicArray* a = malloc(sizeof(DynamicArray));
     // Failed allocation

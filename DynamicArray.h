@@ -1,7 +1,12 @@
 #ifndef DYNA_ARR_H
 #define DYNA_ARR_H
 
-struct DynamicArray;
+struct DynamicArray {
+    int size;
+    int maxSize;
+    int incrementSize;
+    void** array; // Array of void* pointers
+};
 
 typedef struct DynamicArray DynamicArray;
 
