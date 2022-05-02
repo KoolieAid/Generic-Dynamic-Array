@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#define INCREMENT_SIZE 10
+
 struct DynamicArray {
     int size;
     int maxSize;
