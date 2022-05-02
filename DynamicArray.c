@@ -36,7 +36,7 @@ int dynamic_array_add_element(DynamicArray* a, void* element) {
 
     (a->size)++;
 
-    return 0;
+    return 1;
 }
 
 int dynamic_array_remove_element(DynamicArray* a, int index) {
@@ -61,7 +61,7 @@ int dynamic_array_remove_element(DynamicArray* a, int index) {
 
     (a->size)--;
 
-    return 0;
+    return 1;
 }
 
 int dynamic_array_free_contents(DynamicArray* a) {
