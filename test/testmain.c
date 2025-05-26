@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <string.h>
 
 struct TestObject {
     int a;
@@ -19,6 +20,13 @@ int main() {
     struct TestObject* obj2 = malloc(sizeof(struct TestObject));
     obj2->a = 2;
     obj2->b = "string literal";
+
+    // const char* thing = malloc(sizeof(char) * 5);
+    // memset(&thing, 42,5);
+    // struct TestObject* obj3 = malloc(sizeof(struct TestObject));
+    // obj3->a = 3;
+    // obj3->b = thing;
+    // free(&thing);
 
     // Creating the array
     DynamicArray* dyArr = create_dynamic_array(10);
